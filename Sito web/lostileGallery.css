@@ -1,0 +1,200 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Inter', sans-serif; font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+color: black;
+padding-bottom: 30px;
+}
+.big-text{font-size: 35px; font-weight: bold; margin-left: 5%; text-align: center;}
+.mid-text{font-size: 45px; text-align: center;font-weight: bold;}
+.normail-text{font-size: 20px; margin-left: 30%; margin-bottom: 10%;}
+.small-text{font-size: 18px; font-style: italic; color: #9c9c9c;}
+.intro-text{font-size: 20px;font-weight: bold;}
+.button{padding: 18px 28px;background: #DC143C ; color: white; display: inline-block; border-radius: 6px;}
+.link-text{font-size: 18px; font-style: italic; color: red; padding: 2%;}
+.link-text2{font-size: 27px; color: white; }
+.trex {margin-top: 150px;}
+.trex2 {margin-top:100px;}
+.trex3 { margin-top: 15px;}
+.trex4{margin-bottom: 45px;}
+.pad{padding:30px;}
+.trex17 {margin-left: 45%;}
+/* ! Header */
+.header{
+width: 100%;
+position:absolute;    /* ! Rimane fisso nel punto in cui l'abbiamo messo */
+top:0;
+left:0;
+padding: 25px;
+display: flex;    /* ! Very important perchè ti mette gli elements in orizzontale */
+
+}
+
+.menu{
+width: 100%;
+cursor: pointer;
+font-size: 18px;
+}
+.menu li{display: inline-block;}  /*metti le cose del menu in orizzontale */
+.menu li a{color: white; padding: 15px; display:block; border-radius: 8px;}
+
+li.menu, li:hover {
+background-color: #DC143C;
+transition: .5s;
+border-radius: 8px;
+}
+.sub-menu {
+  display: none;
+  border-radius: 8px;
+
+}
+.menu ul li:hover .sub-menu{
+  display:block;
+  position:absolute;
+  background: black;
+  margin-left: -15px;
+  border-radius: 8px;
+
+}
+
+.colorerosso {
+  color: #DC143C;
+}
+
+
+
+
+.hero{
+height:100vh;
+background:  linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,0.6) 70.71%), url('Img/Fotoherogallery.jpg') no-repeat center center;
+ display: flex;
+ width: 100%;
+ align-items: center;
+background-size: cover;
+}
+.hero__content {
+  padding: 10%;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto; /*per allinearlo al centro della pagina */
+
+}
+.ctacentrale {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+left: 42%;
+top: 75%;
+}
+
+
+.ctacentrale a{color: white;}
+.hero__content h1,h2,
+.hero__content p{color: white;}
+
+/* Griglia */
+
+.griglia {
+display:flex;
+max-width:1920px;
+padding: 0 30px;
+margin: 0 auto;
+margin-top: 90px;
+}
+.griglia .col {width: 100%;}
+
+
+/*helpers*/
+
+.mt-1{margin-top:25px;}
+.mt-2{margin-top:50px;}
+.mt-3{margin-top:75px;}
+.mt-4{margin-top:4%;}
+.mt-5{margin-top:170px; line-height: 25px;}
+.mt6 {margin-top: 3%;}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Creiamo delle colonne di dimensioni uguali una accanto all'altra */
+.column {
+  flex:25%;
+  max-width: 50%;
+  padding: 9px;
+}
+
+.column img {
+  margin-right: 8px;
+  margin-top: 9px;
+  width: 100%;
+}
+.column p {
+  margin-top: 7%;
+}
+.footer{
+background:#000000;
+padding: 5% 5%;
+margin-top: 15%;
+width: 100%;
+}
+
+.footer h4{color: white;}
+.footer a{color: white;}
+
+.grigliafooter {
+display:flex;
+max-width: 1920px;
+padding: 0 30px;
+margin: 0 auto;
+}
+
+
+/* N.B. icone social, ho dovuto
+fare così perchè con le immagini non funzionava*/
+
+/* Ho dovuto mettere anche una libreria esterna, mi scusi
+ma era l'unico metodo che avevo trovato,
+così per fare le icone in quella maniera (metodo suggerito
+dal sito stesso della W3C )*/
+.fa {
+  padding: 6px;
+  font-size: 25px;
+  width: 30px;
+  height: 28px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 3%;
+  }
+.fa-facebook {
+  background: #DC143C;
+  color: white;
+ text-align: center;
+}
+.fa-twitter {
+  background: #DC143C;
+  color: white;
+ text-align: center;
+ margin-left: 3%;
+}
+.fa-instagram {
+  background: #DC143C;
+  color: white;
+ text-align: center;
+ margin-left: 3%;
+}

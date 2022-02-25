@@ -1,0 +1,1237 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;;
+}
+
+body{
+  font-family: 'Inter', sans-serif; font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+color: black;
+
+}
+.big-text{font-size: 65px; font-weight: bold;}
+.big-text2 {font-size: 60px;}
+.big-text3 {font-size: 65px; font-weight: bold; margin-top: 55%;}
+.mid-text{font-size: 40px;}
+.mid-text2{font-size: 40px;font-weight: bold;}
+.mid-text3{font-size: 40px;font-weight: bold; color: #403F3F; text-align:center;}
+.normail-text{font-size: 20px; color: black;}
+.small-text{font-size: 18px;  color: #403F3F;}
+.intro-text{font-size: 20px;font-weight: bold; font-style: italic;}
+.intro-text2{font-size: 30px;}
+.intro-text3{font-size: 20px;}
+.button{padding: 18px 28px;background: #DC143C ; color: white; display: inline-block; border-radius: 8px;}
+.link-text{font-size: 18px; font-style: italic; color: red; padding: 2%;}
+.link-text2{font-size: 27px; color: white; }
+.link-text3{font-size: 27px; font-weight: bolder; color: #DC143C; text-align: center;}
+.link-text3 a {
+  color: #DC143C ;
+  font-weight: bolder;
+ }
+/* ! helpers*/
+.mt {margin-top: 20%;}
+.trex {margin-top: 55%;}
+.trex2 {margin-top: 100%;}
+.trex3 { margin-top: 10%;}
+.trex4{margin-bottom: 45px;}
+.trex6 {margin-top: 5%;}
+.trex7 {margin-left: 2%;}
+.trex8 {margin-left: 100%;}
+.trex9 {margin-top: 45%;}
+.pad {padding:30px;}
+.trex10 {padding: 5%;}
+.trex11 {margin-left: 28%;}
+.trex12 {margin-top: 3%;}
+.mtnegativo {margin-top: 2%;}
+.trex13 {padding: 2%;}
+.trex14 {margin-left: 8%;}
+.trex15 {margin-left: 37%;}
+.trex16 {padding: 3%;}
+.mtnegativo2 {margin-top: -10%;}
+.trex16 {padding: 3%;}
+
+
+/* ! Header */
+.header{
+width: 100%;
+position:absolute;    /* ! Rimane fisso nel punto in cui l'abbiamo messo */
+top:0;
+left:0;
+padding: 25px;
+display: flex;    /* ! Very important perchè ti mette gli elements in orizzontale */
+}
+
+.menu{
+width: 100%;
+cursor: pointer;
+font-size: 18px;
+}
+.menu li{display: inline-block;}  /*metti le cose del menu in orizzontale */
+.menu li a{color: white; padding: 15px; display:block; border-radius: 8px;}
+
+li.menu, li:hover {
+background-color: #DC143C;
+transition: .5s;
+border-radius: 8px;
+}
+.sub-menu {
+  display: none;
+  border-radius: 8px;
+
+}
+.menu ul li:hover .sub-menu{
+  display:block;
+  position:absolute;
+  background: black;
+  margin-left: -15px;
+  border-radius: 8px;
+
+}
+.colorerosso {
+  color: #DC143C;
+}
+
+
+.hero{
+  height:100vh;
+ background:  linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,0.6) 70.71%), url('Img/ciao34.jpg') no-repeat center center;
+ display: flex;
+ width: 100%;
+ align-items: center;
+ background-size: cover;
+}
+.hero__content {
+  padding: 30px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto; /*per allinearlo al centro della pagina */
+}
+.ctacentralecuriosità {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+left: 42%;
+top: 75%;
+}
+.ctacentrale {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+left: 42%;
+top: 75%;
+}
+.ctacentrale2 {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+left: 42%;
+top: 75%;
+}
+
+.ctacentrale a{color: white;}
+.ctacentrale2 a{color: white;}
+.hero__content h1,
+.hero__content p{color: white;}
+
+
+/* Si ricomincia a lavorare */
+.poster{
+display: flex;
+height: 110%;
+width: 100%;
+align-items: center;
+margin-top: 10%;
+margin-bottom: 10%;
+position:absolute;
+}
+.poster__img{
+width: 60%;
+height:100%;
+padding:5%;
+}
+.poster__content{
+width: 40%;
+padding:10%;
+margin-right: 45%;
+}
+.poster__content a,p {
+  margin-top: 10%;
+}
+ /* N.B. Curiosità*/
+
+ .herocuriosità {
+  height:100vh;
+  background:  linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,0.6) 70.71%), url('Img/Newyork.jpg') no-repeat center center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-size: cover;
+ }
+
+.postercuriosità{
+display: flex;
+height: 100vh;
+width: 100%;
+align-items: center;
+margin-bottom: 10%;
+position:absolute;
+}
+.poster__imgcuriosità{
+width: 40%;
+height:100%;
+margin-left: 10%;
+}
+
+.poster__contentcuriosità {
+width: 60%;
+padding:15%;
+margin-bottom: 20%;
+line-height: 120%;
+
+}
+.poster__contentcuriosità a,p {
+  margin-top: 10%;
+}
+
+.footercuriosità{
+background:#000000;
+padding: 5% 5%;
+margin-top: 141%;
+width: 100%;
+}
+.grigliacuriosità {
+display:flex;
+max-width: 1920px;
+padding: 0 30px;
+margin: 0 auto;
+}
+.ctacentralecuriosità {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+left: 42%;
+top: 75%;
+}
+
+
+
+/* Fine curiosità */
+
+/* N.B. Il cast */
+
+.herocast {
+ height:100vh;
+ background: linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,0.6) 70.71%), url('Img/Cast.jpg') no-repeat center center;
+ display: flex;
+ width: 100%;
+ align-items: center;
+ background-size: cover;
+}
+.herocontentcast {
+  padding: 10%;
+  width: 100%;
+  max-width: 1920px;
+  margin-left: 20%;
+  }
+.herocontentcast h1 {color:white}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+.columncast {
+  display: flex;
+  padding: 0 5%;
+  width: 100%;
+  position:absolute;
+}
+
+.columncast img {
+  margin-right: 1%;
+  margin-left: 1%;
+  width: 100%;
+}
+
+
+ .ctapersonaggi1 {
+ position: absolute;
+ padding: 18px 28px;
+ background: #DC143C ;
+ color: white;
+ display: inline-block;
+ border-radius: 8px;
+ margin-left: 12%;
+ margin-top: 20%;
+ }
+.ctapersonaggi1 a {
+  color: white;
+}
+ .ctapersonaggi2 {
+ position: absolute;
+ padding: 18px 28px;
+ background: #DC143C ;
+ color: white;
+ display: inline-block;
+ border-radius: 8px;
+ margin-left: 43%;
+ margin-top: 20%;
+ }
+
+ .ctapersonaggi2 a {
+   color: white;
+ }
+ .ctapersonaggi3 {
+ position: absolute;
+ padding: 18px 28px;
+ background: #DC143C ;
+ color: white;
+ display: inline-block;
+ border-radius: 8px;
+ margin-left: 71%;
+ margin-top: 24%;
+ }
+
+ .ctapersonaggi3 a {
+   color: white;
+ }
+
+.ctapersonaggi4 {
+ position: absolute;
+ padding: 18px 28px;
+ background: #DC143C ;
+ color: white;
+ display: inline-block;
+ border-radius: 8px;
+ margin-left: 14%;
+ margin-top: 24%;
+ }
+
+ .ctapersonaggi4 a {
+   color: white;
+ }
+ .ctapersonaggi5 {
+  position: absolute;
+  padding: 18px 28px;
+  background: #DC143C ;
+  color: white;
+  display: inline-block;
+  border-radius: 8px;
+  margin-left: 45%;
+  margin-top: 24%;
+  }
+
+  .ctapersonaggi5 a {
+    color: white;
+  }
+  .ctapersonaggi6 {
+   position: absolute;
+   padding: 18px 28px;
+   background: #DC143C ;
+   color: white;
+   display: inline-block;
+   border-radius: 8px;
+   margin-left: 73%;
+   margin-top: 24%;
+   }
+
+   .ctapersonaggi6 a {
+     color: white;
+   }
+   .footercast{
+   background:#000000;
+   padding: 5% 5%;
+   width: 100%;
+   margin-top: 45%;
+   }
+   .footercast h4{color: white;}
+   .footercast a{color: white;}
+   .grigliacast {
+   display:flex;
+   max-width: 1920px;
+   padding: 0 30px;
+   margin: 0 auto;
+   }
+/* Fine Cast */
+
+/* Regia */
+.heroregia {
+  height:100vh;
+ background:  linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,0.6) 70.71%), url('Img/PaoloSorrentino.jpg') no-repeat center center;
+ display: flex;
+ width: 100%;
+ align-items: center;
+ background-size: cover;
+}
+.hero__contentregia {
+  padding: 0;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto; /*per allinearlo al centro della pagina */
+  margin-left: 26%;
+}
+.ctacentraleregia {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+left: 41%;
+top: 80%;
+}
+
+.ctacentraleregia a{color: white;}
+.hero__contentregia h1,
+.hero__contentregia p{color: white;}
+
+.footerregia {
+background:#000000;
+padding: 5% 5%;
+width: 100%;
+margin-top: 18%;
+}
+.img-regia {
+  display: flex;
+  flex-wrap: wrap;
+  height: 110vh;
+  width: max-content;
+}
+.img-regia img {
+  width: 1600px;
+}
+
+ /* Fine Regia */
+
+ /* N.B. Descrizione */
+ .herodescrizione {
+  height:110vh;
+  background:  linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,0.6) 70.71%), url('Img/chitarra.jpg') no-repeat center center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-size: cover;
+ }
+ .hero__contentdescrizione {
+   padding: 0;
+   width: 100%;
+   max-width: 1920px;
+   margin: 0 auto; /*per allinearlo al centro della pagina */
+   margin-left: 35%;
+
+ }
+
+ .hero__contentdescrizione h1,
+ .hero__contentdescrizione p{color: white;}
+.hero__contentdescrizione p {
+  margin-right: 30%;
+}
+.ctacentraledescrizione {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+left: 37%;
+top: 80%;
+}
+.ctacentraledescrizione a {
+  color: white;
+}
+ .opzioni {
+   padding: 5% 5%;
+   width: 100%;
+   margin-left: 5%;
+   }
+.opzioni h4 {
+  color: black;
+
+}
+.opzioni p {
+
+}
+
+.footerdescrizione{
+background:#000000;
+padding: 5% 5%;
+width: 100%;
+margin-top: 5%;
+}
+.footerdescrizione h4{color: white;}
+.footerdescrizione a{color: white;}
+ /* Fine descrizione */
+
+ /* Critica */
+
+ .herocritica {
+  height:110vh;
+  background:  linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,0.9) 70.71%), url('Img/bottiglia.jpg') no-repeat center center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-size: cover;
+ }
+
+ .ctacentralecritica {
+ position: absolute;
+ padding: 18px 28px;
+ background: #DC143C ;
+ color: white;
+ display: inline-block;
+ border-radius: 8px;
+ left: 46%;
+ top: 80%;
+ }
+ .ctacentralecritica a {
+   color: white;
+ }
+ .hero__contentcritica{
+   padding: 0;
+   width: 100%;
+   max-width: 1920px;
+   margin: 0 auto; /*per allinearlo al centro della pagina */
+   margin-left: 36%;
+
+ }
+ .hero__contentcritica h1,
+ .hero__contentcritica p{color: white;}
+ .hero__contentcritica p {
+  margin-right: 30%;
+ }
+ .footercritica {
+ background:#000000;
+ padding: 5% 5%;
+ margin-top: 15%;
+ width: 100%;
+ }
+ .grigliacritica {
+ display:flex;
+ max-width: 1920px;
+ padding: 0 30px;
+ margin: 0 auto;
+
+ }
+
+
+
+
+
+/* Penultima sezione Homepage */
+
+.testocover{
+display:flex;
+margin-top: 80%;
+padding: 4% 0;
+height: 110%;
+width: 100%;
+position: absolute;
+}
+.testocovertesto  {width:50%; padding: 1%; align-items: center; line-height: 130%; position: absolute; margin-left: 50%; }
+.testocovertesto a{
+margin-top: 5%;
+}
+.testocovertesto p{
+  margin-top: 5%;
+}
+.testocovertesto h4{
+margin-top: 8%;
+}
+.testocovertitolo {width: 50%; padding: 5%; align-items: center; display:flex;}
+
+.testocovertitolo h3{color:black;}
+.testocovertesto h4,p{color:black;}
+
+
+
+.footer{
+background:#000000;
+padding: 5% 5%;
+margin-top: 140%;
+width: 100%;
+}
+.footer h4{color: white;}
+.footer a{color: white;}
+
+.griglia {
+display:flex;
+max-width: 1920px;
+padding: 0 30px;
+margin: 0 auto;
+}
+.griglia2 {
+display:flex;
+max-width: 1920px;
+padding: 0 30px;
+margin: 0 auto;
+}
+
+.column {
+    flex:25%;
+    max-width: 50%;
+    padding: 0 5px;
+  }
+.column p {
+  margin-top: 7%;
+}
+
+
+/* N.B. icone social, ho dovuto
+fare così perchè con le immagini non funzionava*/
+
+/* Ho dovuto mettere una libreria esterna, mi scusi
+ma era l'unico metodo che avevo trovato,
+così per fare le icone in quella maniera (metodo suggerito
+dal sito stesso della W3C) */
+
+.fa {
+  padding: 6px;
+  font-size: 25px;
+  width: 30px;
+  height: 28px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 3%;
+  }
+.fa-facebook {
+  background: #DC143C;
+  color: white;
+ text-align: center;
+}
+.fa-twitter {
+  background: #DC143C;
+  color: white;
+ text-align: center;
+ margin-left: 3%;
+}
+.fa-instagram {
+  background: #DC143C;
+  color: white;
+ text-align: center;
+ margin-left: 3%;
+}
+
+/* Media Query 1200px*/
+
+@media only screen and (min-width: 1190px) and (max-width: 1439px) {
+
+/* Sistemo curiosità */
+
+.postercuriosità {
+display: flex;
+height: 100vh;
+width: 100%;
+align-items: center;
+margin-bottom: 10%;
+position:absolute;
+}
+.poster__imgcuriosità {
+width: 40%;
+height:100%;
+margin-left: 5%;
+}
+
+.poster__contentcuriosità {
+width: 60%;
+padding:5%;
+margin-bottom: 25%;
+line-height: 120%;
+margin-left: 20%
+}
+.poster__contentcuriosità a,p {
+
+}
+.footercuriosità {
+background:#000000;
+padding: 5% 5%;
+margin-top: 170%;
+width: 100%;
+}
+
+.grigliacuriosità {
+display:flex;
+max-width: 1920px;
+padding: 0 30px;
+margin: 0 auto;
+}
+
+.ctacentralecuriosità {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+left: 42%;
+top: 75%;
+
+ }
+
+}
+
+
+@media only screen and (min-width:1190px) {
+
+/*Sistemo il cast */
+
+.ctapersonaggi1 {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+margin-left: 16%;
+margin-top: 40%;
+}
+.ctapersonaggi1 a {
+ color: white;
+}
+.ctapersonaggi2 {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+margin-left: 47%;
+margin-top: 40%;
+}
+
+.ctapersonaggi2 a {
+  color: white;
+}
+.ctapersonaggi3 {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+margin-left: 75%;
+margin-top: 40%;
+}
+
+.ctapersonaggi3 a {
+  color: white;
+}
+
+.ctapersonaggi4 {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+margin-left: 14%;
+margin-top: 40%;
+}
+
+.ctapersonaggi4 a {
+  color: white;
+}
+.ctapersonaggi5 {
+ position: absolute;
+ padding: 18px 28px;
+ background: #DC143C ;
+ color: white;
+ display: inline-block;
+ border-radius: 8px;
+ margin-left: 45%;
+ margin-top: 40%;
+ }
+
+ .ctapersonaggi5 a {
+   color: white;
+ }
+ .ctapersonaggi6 {
+  position: absolute;
+  padding: 18px 28px;
+  background: #DC143C ;
+  color: white;
+  display: inline-block;
+  border-radius: 8px;
+  margin-left: 73%;
+  margin-top: 40%;
+  }
+
+  .ctapersonaggi6 a {
+    color: white;
+  }
+  .footercast{
+  background:#000000;
+  padding: 5% 5%;
+  width: 100%;
+  margin-top: 55%;
+  }
+  .footercast h4{color: white;}
+  .footercast a{color: white;}
+  .grigliacast {
+  display:flex;
+  max-width: 1920px;
+  padding: 0 30px;
+  margin: 0 auto;
+  }
+
+}
+
+@media only screen and (max-width: 1190px) {
+/*sistemo la Regia, l'immagine ha avuto problemi */
+
+.footerregia {
+background:#000000;
+padding: 5% 5%;
+width: 100%;
+margin-top: 20%;
+}
+.img-regia {
+  display: flex;
+  flex-wrap: wrap;
+  height: 110vh;
+  width: max-content;
+}
+.img-regia img {
+  width: 1200px;
+}
+.trex11 {margin-left: 20%;
+}
+}
+
+
+/*Schermi Grossi */
+
+
+@media only screen and (min-width: 1910px) {
+ /* Sistemo la Home(Index) */
+
+ .poster{
+ display: flex;
+ height: 80%;
+ width: 100%;
+ align-items: center;
+ margin-top: 10%;
+ margin-bottom: 10%;
+ position:absolute;
+ }
+ .poster__img{
+ width: 60%;
+ height:110%;
+ padding:7%;
+ }
+ .poster__content{
+ width: 40%;
+ padding:12%;
+ margin-right: 35%;
+ }
+ .poster__content a,p {
+   margin-top: 10%;
+ }
+
+.mid-text{font-size: 50px;}
+.small-text{font-size: 23px;  color: #666;}
+.button{padding: 20px 30px;background: #DC143C ; color: white; display: inline-block; border-radius: 8px;}
+
+.testocover{
+display:flex;
+margin-top: 80%;
+padding: 4% 0;
+height: 110%;
+width: 100%;
+position: absolute;
+}
+.testocovertesto {
+  width:50%;
+  padding: 1%;
+  align-items: center;
+  line-height: 130%;
+  position: absolute;
+  margin-left: 50%;
+}
+
+.testocovertesto a{
+margin-top: 5%;
+}
+.testocovertesto p{
+  margin-top: 5%;
+}
+.testocovertesto h4{
+margin-top: 12%;
+}
+.testocovertitolo {width: 50%; padding: 5%; align-items: center; display:flex;}
+
+.testocovertitolo h3{color:black;}
+.testocovertesto h4,p{color:black;}
+
+}
+
+
+@media only screen and (min-width: 1910px) {
+
+/*Sistemo Curiosità */
+.postercuriosità{
+display: flex;
+height: 80%;
+width: 100%;
+align-items: center;
+margin-bottom: 10%;
+position:absolute;
+}
+.poster__imgcuriosità{
+width: 40%;
+height:100%;
+margin-left: 8%;
+}
+
+.poster__contentcuriosità {
+width: 60%;
+padding:7%;
+line-height: 200%;
+margin-left: 7%;
+}
+.poster__contentcuriosità a {
+  margin-top: 10%;
+}
+.mid-text{font-size: 60px;}
+.small-text{font-size: 23px;  color: #403F3F;}
+.button{padding: 20px 30px;background: #DC143C ; color: white; display: inline-block; border-radius: 8px;}
+}
+.footercuriosità{
+background:#000000;
+padding: 5% 5%;
+margin-top: 150%;
+width: 100%;
+}
+.grigliacuriosità {
+display:flex;
+max-width: 1920px;
+padding: 0 30px;
+margin: 0 auto;
+}
+
+.ctacentralecuriosità {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+left: 44%;
+top: 75%;
+}
+.ctacentralecuriosità a {
+  color: white;
+}
+
+
+
+@media only screen and (min-width: 1910px) {
+
+/*Sistemo Descrizione */
+
+.herodescrizione {
+ height:110vh;
+ background:  linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,0.6) 70.71%), url('Img/chitarra.jpg') no-repeat center center;
+ display: flex;
+ width: 100%;
+ align-items: center;
+ background-size: cover;
+}
+.hero__contentdescrizione {
+  padding: 0;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto; /*per allinearlo al centro della pagina */
+  margin-left: 41%;
+
+}
+
+.hero__contentdescrizione h1,
+.hero__contentdescrizione p{color: white;}
+.hero__contentdescrizione p {
+ margin-right: 30%;
+}
+.ctacentraledescrizione {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+left: 42%;
+top: 78%;
+}
+.ctacentraledescrizione a {
+ color: white;
+}
+.opzioni {
+  padding: 4% 8%;
+  width: 100%;
+  margin-left: 5%;
+  }
+.opzioni h4 {
+ color: black;
+
+}
+.opzioni p {
+
+}
+.trex14 {margin-left: 6%;}
+.trex15 {margin-left: 40%;}
+
+.griglia2 {
+display:flex;
+max-width: 1920px;
+padding: 0 10px;
+margin: 0 auto;
+}
+}
+@media only screen and (min-width: 1910px) {
+/*Sistemo Cast */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+.columncast {
+  display: flex;
+  padding: 0 5%;
+  width: 100%;
+  position:absolute;
+}
+
+.columncast img {
+  margin-right: 1%;
+  margin-left: 1%;
+  width: 100%;
+}
+
+
+ .ctapersonaggi1 {
+ position: absolute;
+ padding: 25px 40px;
+ background: #DC143C ;
+ color: white;
+ display: inline-block;
+ border-radius: 8px;
+ margin-left: 16%;
+ margin-top: 34%;
+ }
+.ctapersonaggi1 a {
+  color: white;
+}
+ .ctapersonaggi2 {
+ position: absolute;
+ padding: 25px 40px;
+ background: #DC143C ;
+ color: white;
+ display: inline-block;
+ border-radius: 8px;
+ margin-left: 45%;
+ margin-top: 34%;
+ }
+
+ .ctapersonaggi2 a {
+   color: white;
+ }
+ .ctapersonaggi3 {
+ position: absolute;
+ padding: 25px 40px;
+ background: #DC143C ;
+ color: white;
+ display: inline-block;
+ border-radius: 8px;
+ margin-left: 74%;
+ margin-top: 34%;
+ }
+
+ .ctapersonaggi3 a {
+   color: white;
+ }
+
+.ctapersonaggi4 {
+ position: absolute;
+ padding: 25px 40px;
+ background: #DC143C ;
+ color: white;
+ display: inline-block;
+ border-radius: 8px;
+ margin-left: 16%;
+ margin-top: 34%;
+ }
+
+ .ctapersonaggi4 a {
+   color: white;
+ }
+ .ctapersonaggi5 {
+  position: absolute;
+  padding: 25px 40px;
+  background: #DC143C ;
+  color: white;
+  display: inline-block;
+  border-radius: 8px;
+  margin-left: 45%;
+  margin-top: 34%;
+  }
+
+  .ctapersonaggi5 a {
+    color: white;
+  }
+  .ctapersonaggi6 {
+   position: absolute;
+   padding: 25px 40px;
+   background: #DC143C ;
+   color: white;
+   display: inline-block;
+   border-radius: 8px;
+   margin-left: 74%;
+   margin-top: 34%;
+   }
+
+   .ctapersonaggi6 a {
+     color: white;
+   }
+   .herocontentcast {
+     padding: 10%;
+     width: 100%;
+     max-width: 1920px;
+     margin-left: 25%;
+     }
+
+.big-text{font-size: 70px; font-weight: bold;}
+.ctacentrale2 {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+left: 44%;
+top: 75%;
+}
+   }
+
+@media only screen and (min-width: 1910px) {
+
+/*Sistemo Regia */
+.hero__contentregia {
+  padding: 0;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto; /*per allinearlo al centro della pagina */
+  margin-left: 35%;
+}
+.big-text2 {font-size: 70px;}
+.trex11 {margin-left: 30%;}
+
+.img-regia img {
+  width: 1920px;
+}
+
+.ctacentraleregia {
+position: absolute;
+padding: 18px 28px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+left: 45%;
+top: 77%;
+}
+
+
+
+
+}
+@media only screen and (min-width: 1910px) {
+
+/*Sistemo Critica */
+
+.herocritica {
+ height:110vh;
+ background:  linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,0.9) 70.71%), url('Img/bottiglia.jpg') no-repeat center center;
+ display: flex;
+ width: 100%;
+ align-items: center;
+ background-size: cover;
+}
+
+.ctacentralecritica {
+position: absolute;
+padding: 15px 40px;
+background: #DC143C ;
+color: white;
+display: inline-block;
+border-radius: 8px;
+left: 49%;
+top: 75%;
+}
+.ctacentralecritica a {
+  color: white;
+}
+.hero__contentcritica{
+  padding: 0;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto; /*per allinearlo al centro della pagina */
+  margin-left: 43%;
+  line-height: 180%;
+}
+.hero__contentcritica h1,
+.hero__contentcritica p{color: white;}
+.hero__contentcritica p {
+ margin-right: 30%;
+}
+
+.trex11 {margin-left: 33%;}
+.trex10 {padding: 6%;}
+.trex14 {margin-left: 4%;}
+}
+
+@media only screen and (min-width:1430px) {
+/*Sistemo curiosità a questa definizione */
+
+.postercuriosità {
+display: flex;
+height: 90%;
+width: 100%;
+align-items: center;
+margin-bottom: 10%;
+position:absolute;
+}
+.poster__imgcuriosità {
+width: 40%;
+height:100%;
+margin-left: 5%;
+}
+
+.poster__contentcuriosità {
+width: 60%;
+padding:5%;
+margin-bottom: 25%;
+line-height: 120%;
+margin-left: 20%
+}
+
+
+
+
+
+}
